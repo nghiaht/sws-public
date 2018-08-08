@@ -22,18 +22,18 @@ cd /vagrant/01-vagrant-and-docker/scripts/dev  # vào shared folder của Vagran
 Cụ thể hơn:
 * vagrant up: Mở hoặc tạo máy ảo (dev machine) dựa vào thông tin của Vagrantfile
 
-  [01](https://i.imgur.com/I95eobL.png)
+  ![01](https://i.imgur.com/I95eobL.png)
 
 * Vagrant sẽ pull image Ubuntu 16.04 (ubuntu/xenial64) về và cài đặt máy Ubuntu đó giúp chúng ta trên nền một máy ảo của Virtualbox.
 * Vagrant chạy script vagrant-provision.sh để cài thêm Docker vào máy Ubuntu
 * Ta vagrant ssh để vào shell của Ubuntu.
 
-  [02](https://i.imgur.com/RqxOe19.png)
+  ![02](https://i.imgur.com/RqxOe19.png)
 
 * cd /vagrant/01-vagrant-and-docker/scripts/dev và chạy lệnh ./services-up.sh
   để nó gọi docker-compose up 
 
-  [03](https://i.imgur.com/tTSe1W0.png)
+  ![03](https://i.imgur.com/tTSe1W0.png)
 
   Chú ý:Dùng Docker Compose cho phép liệt kê các service cần cho việc chỉ trong 1 file duy nhất docker-compose.yml thay vì phải chạy docker-run mongodb, docker run mysql... nhiều lần để start cho đủ các service.
 
